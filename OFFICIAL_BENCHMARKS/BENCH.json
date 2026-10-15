@@ -1,0 +1,218 @@
+{
+  "schema": "anticloud.tier-bench/1",
+  "project": "PYDUB",
+  "source": {
+    "repo_path": "E:\\fenta\\Downloads\\The Anticloud\\ANTICLOUD_REPOS\\AUDIO_CONSUMER\\PYDUB\\UPSTREAM_CLONE",
+    "git": {
+      "head": "103e339d3bc7a9a58a9f1de65f7d8074659b5f5a",
+      "url": "https://github.com/jiaaro/pydub",
+      "branch": "master",
+      "committed_at": "2026-03-19T17:32:30-04:00"
+    }
+  },
+  "metrics": {
+    "files_total": 50,
+    "source_files_scanned": 13,
+    "lines_of_code": 4798,
+    "languages": {
+      ".py": 14,
+      ".wav": 10,
+      ".mp3": 5,
+      "(none)": 4,
+      ".yml": 2,
+      ".markdown": 2,
+      ".md": 2,
+      ".in": 1,
+      ".cfg": 1,
+      ".ogg": 1,
+      ".jpg": 1,
+      ".png": 1,
+      ".mp4": 1,
+      ".m4a": 1,
+      ".flac": 1
+    }
+  },
+  "licence": {
+    "spdx": "MIT",
+    "class": "A",
+    "source_file": "LICENSE",
+    "redistribution_allowed": true
+  },
+  "dependencies": {
+    "count": 0,
+    "unique": 0,
+    "by_ecosystem": {},
+    "list": []
+  },
+  "owasp_top10": {
+    "total_findings": 4,
+    "files_with_findings": 4,
+    "severity": {
+      "high": 0,
+      "medium": 0,
+      "low": 4
+    },
+    "categories": {
+      "A01-BrokenAccessControl": {
+        "count": 0,
+        "findings": []
+      },
+      "A02-CryptographicFailures": {
+        "count": 0,
+        "findings": []
+      },
+      "A03-Injection": {
+        "count": 0,
+        "findings": []
+      },
+      "A04-InsecureDesign": {
+        "count": 1,
+        "findings": [
+          {
+            "severity": "low",
+            "file": "pydub/audio_segment.py",
+            "line": 140,
+            "cwe": "CWE-",
+            "snippet": "# TODO: Handle huge files in some other way"
+          }
+        ]
+      },
+      "A05-SecurityMisconfiguration": {
+        "count": 0,
+        "findings": []
+      },
+      "A06-VulnerableComponents": {
+        "count": 0,
+        "findings": []
+      },
+      "A07-AuthFailures": {
+        "count": 0,
+        "findings": []
+      },
+      "A08-SoftwareDataIntegrity": {
+        "count": 3,
+        "findings": [
+          {
+            "severity": "low",
+            "file": "setup.py",
+            "line": 17,
+            "cwe": "CWE-319",
+            "snippet": "url='http://pydub.com',"
+          },
+          {
+            "severity": "low",
+            "file": "pydub/effects.py",
+            "line": 142,
+            "cwe": "CWE-319",
+            "snippet": "http://en.wikipedia.org/wiki/Dynamic_range_compression"
+          },
+          {
+            "severity": "low",
+            "file": "pydub/generators.py",
+            "line": 7,
+            "cwe": "CWE-319",
+            "snippet": "here: http://en.wikipedia.org/wiki/Waveform"
+          }
+        ]
+      },
+      "A09-LoggingMonitoringFailures": {
+        "count": 0,
+        "findings": []
+      },
+      "A10-SSRF": {
+        "count": 0,
+        "findings": []
+      }
+    }
+  },
+  "owasp_llm_top10": {
+    "total_findings": 0,
+    "files_with_findings": 0,
+    "severity": {
+      "high": 0,
+      "medium": 0,
+      "low": 0
+    },
+    "categories": {
+      "LLM01-PromptInjection": {
+        "count": 0,
+        "findings": []
+      },
+      "LLM02-SensitiveInfoDisclosure": {
+        "count": 0,
+        "findings": []
+      },
+      "LLM03-SupplyChain": {
+        "count": 0,
+        "findings": []
+      },
+      "LLM04-DataPoisoning": {
+        "count": 0,
+        "findings": []
+      },
+      "LLM05-ImproperOutputHandling": {
+        "count": 0,
+        "findings": []
+      },
+      "LLM06-ExcessiveAgency": {
+        "count": 0,
+        "findings": []
+      },
+      "LLM07-SystemPromptLeak": {
+        "count": 0,
+        "findings": []
+      },
+      "LLM08-VectorEmbeddingWeaknesses": {
+        "count": 0,
+        "findings": []
+      },
+      "LLM09-Misinformation": {
+        "count": 0,
+        "findings": []
+      },
+      "LLM10-UnboundedConsumption": {
+        "count": 0,
+        "findings": []
+      }
+    }
+  },
+  "sbom": {
+    "bomFormat": "CycloneDX",
+    "specVersion": "1.5",
+    "serialNumber": "urn:uuid:424fb7a2-45bc-51e0-b81e-b8b8f1a78644",
+    "version": 1,
+    "metadata": {
+      "timestamp": "2026-10-06T07:58:02Z",
+      "component": {
+        "type": "application",
+        "name": "PYDUB",
+        "version": "103e339d3bc7",
+        "bom-ref": "pkg:generic/anticloud/PYDUB@103e339d3bc7",
+        "purl": "pkg:generic/anticloud/PYDUB@103e339d3bc7",
+        "licenses": [
+          {
+            "license": {
+              "id": "MIT"
+            }
+          }
+        ]
+      },
+      "properties": [
+        {
+          "name": "anticloud:source-commit",
+          "value": "103e339d3bc7a9a58a9f1de65f7d8074659b5f5a"
+        },
+        {
+          "name": "anticloud:source-url",
+          "value": "https://github.com/jiaaro/pydub"
+        },
+        {
+          "name": "anticloud:tier",
+          "value": "tier-agent"
+        }
+      ]
+    },
+    "components": []
+  },
+  "elapsed_seconds": 1.43
+}

@@ -1,0 +1,38 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.5",
+  "serialNumber": "urn:uuid:424fb7a2-45bc-51e0-b81e-b8b8f1a78644",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2026-10-05T14:50:27Z",
+    "component": {
+      "type": "application",
+      "name": "PYDUB",
+      "version": "103e339d3bc7",
+      "bom-ref": "pkg:generic/anticloud/PYDUB@103e339d3bc7",
+      "purl": "pkg:generic/anticloud/PYDUB@103e339d3bc7",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ]
+    },
+    "properties": [
+      {
+        "name": "anticloud:source-commit",
+        "value": "103e339d3bc7a9a58a9f1de65f7d8074659b5f5a"
+      },
+      {
+        "name": "anticloud:source-url",
+        "value": "https://github.com/jiaaro/pydub"
+      },
+      {
+        "name": "anticloud:tier",
+        "value": "tier-agent"
+      }
+    ]
+  },
+  "components": []
+}
